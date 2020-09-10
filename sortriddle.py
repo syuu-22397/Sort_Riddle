@@ -15,7 +15,7 @@ from discord.ext import commands
 # サーバのトークン公開しないこと
 json_open = open('./info.json')
 json_load = json.load(json_open)
-token = os.environ["DISCORD_BOT_TOKEN"]
+TOKEN = json.load['token']
 
 # コマンドプレフィックスの指定
 bot = commands.Bot(command_prefix='/')
